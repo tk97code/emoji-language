@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Text ---> Icon 😀</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/gh/thekondrashov/ie10-viewport@1.0/css/ie10-viewport.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    </head>
+    <body class="main-body" onload="doConversion()">
+        <div class="container col-md-8 col-md-offset-2">
+            <div>
+                <h2 class="text-muted">Text <i class="fas fa-long-arrow-alt-right"></i> Icon 😀</h2>
+            </div>
+            <div class="form-group">
+                <label for="origin-text" id="typeConvert">Enter the text to be translated: (Translate Type: <span id="typeConvertText">Text <i class="fas fa-long-arrow-alt-right"></i> Icon</span>)</label>
+                <textarea class="form-control" rows="8" id="origin-text" style="font-size: 13pt ; font-family:Segoe UI Emoji"></textarea>
+            </div>
+
+            <div class="composer-popover composer-emoji-popover">
+                <div class="emoji-picker">
+                    <div class="composer-popover-header">
+                        <input class="composer-popover-input" placeholder="Search Icon" value="" maxlength="1">
+                    </div>
+                    <div class="composer-popover-body-container">
+                        <div class="composer-popover-body">
+                            <div class="emoji-picker-groups">
+                                <div class="emoji-picker-group" >
+                                    <span class="emoji-picker-emoji" title="Aa">😀</span>
+                                    <span class="emoji-picker-emoji" title="Bb">😃</span>
+                                    <span class="emoji-picker-emoji" title="Cc">😄</span>
+                                    <span class="emoji-picker-emoji" title="Dd">😁</span>
+                                    <span class="emoji-picker-emoji" title="Ee">😆</span>
+                                    <span class="emoji-picker-emoji" title="Ff">😅</span>
+                                    <span class="emoji-picker-emoji" title="Gg">😂</span>
+                                    <span class="emoji-picker-emoji" title="Hh">🤣</span>
+                                    <span class="emoji-picker-emoji" title="Ii">☺️</span>
+                                    <span class="emoji-picker-emoji" title="Jj">😊</span>
+                                    <span class="emoji-picker-emoji" title="Kk">😇</span>
+                                    <span class="emoji-picker-emoji" title="Ll">🙂</span>
+                                    <span class="emoji-picker-emoji" title="Mm">🙃</span>
+                                    <span class="emoji-picker-emoji" title="Nn">😉</span>
+                                    <span class="emoji-picker-emoji" title="Oo">😌</span>
+                                    <span class="emoji-picker-emoji" title="Pp">😍</span>
+                                    <span class="emoji-picker-emoji" title="Qq">🥰</span>
+                                    <span class="emoji-picker-emoji" title="Rr">😘</span>
+                                    <span class="emoji-picker-emoji" title="Ss">😗</span>
+                                    <span class="emoji-picker-emoji" title="Tt">😙</span>
+                                    <span class="emoji-picker-emoji" title="Uu">😚</span>
+                                    <span class="emoji-picker-emoji" title="Vv">😋</span>
+                                    <span class="emoji-picker-emoji" title="Xx">😛</span>
+                                    <span class="emoji-picker-emoji" title="Yy">😝</span>
+                                    <span class="emoji-picker-emoji" title="Ww">😜</span>
+                                    <span class="emoji-picker-emoji" title="Zz">🤪</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="composer-popover-caret"></div>
+            </div>
+                <div class="form-group">
+                <label for="converted-text">Results:</label>
+                <button style="margin-bottom:0.5rem;" id="copy-result" class="btn">Copy</button>
+                <button style="margin-bottom:0.5rem;" id="transTypeBtn" class="btn">Change translate type</button>
+                <button id="emoji-picker" class="chat-input-tool" title="Pick Emoji">
+                    <i class="far fa-smile-beam fa-w-16 fa-fw fa-lg" style="color: white"></i>
+                </button>
+                <textarea readonly="true" class="form-control" rows="8" id="converted-text" style="font-size: 15pt ; font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,Android Emoji,EmojiSymbols"></textarea>
+            </div>
+
+            <footer class="footer">
+                YEAH!!!
+            </footer>
+        </div>
+            <script type="text/javascript" src="script.js"></script>
+            <script type="text/javascript" src="emoji.js"></script>
+            <script src="https://kit.fontawesome.com/e5b75fc3d0.js" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="aa6269d4c73e18d55fc89e7f-text/javascript"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" type="aa6269d4c73e18d55fc89e7f-text/javascript"></script>
+            <script src="https://cdn.jsdelivr.net/gh/thekondrashov/ie10-viewport@1.0/js/ie10-viewport.min.js" type="aa6269d4c73e18d55fc89e7f-text/javascript"></script>
+            <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="aa6269d4c73e18d55fc89e7f-|49" defer=""></script>
+    </body>
+</html>
